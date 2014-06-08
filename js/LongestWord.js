@@ -18,20 +18,15 @@
 //FUNCTION TO CALC LENGTH OF EACH WORD AND COMPARE EACH WORD
   function calcLength(wordCheck) {
     var words = wordCheck.split(" ");
-    //console.log(words);
-    //var wordsInSentence = words;
     var longestWord = " ";
 
     for (i = 0; i < words.length; i++) {
       //var stringLength = wordsInSentence[i].length;
       if (words[i].length > longestWord.length) {
-          longestWord = words[i]; 
+        longestWord = words[i]; 
       }
-
     }
-    console.log(longestWord);
-    //console.log(stringLength);
-    
+    alert("The longest word is " + longestWord + " ");
   }
 })();
 
